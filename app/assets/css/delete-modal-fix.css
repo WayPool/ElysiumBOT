@@ -1,0 +1,366 @@
+/*+------------------------------------------------------------------+
+ | Copyright 2025, Elysium Media FZCO                              |
+ | https://www.elysiumdubai.net                                    |
+ | Estilos del Modal de Eliminación de Cuentas - Versión 7.0       |
+ +------------------------------------------------------------------*/
+
+/* ============================================
+   MODAL DE ELIMINACIÓN - ESTILOS ESPECÍFICOS
+   ============================================ */
+
+/* Modal Container para Eliminación */
+#deleteModal .modal-container {
+    max-width: 550px !important;
+    height: auto !important;
+    max-height: 85vh !important;
+    padding: 0 !important;
+}
+
+/* Header del Modal de Eliminación */
+#deleteModal .modal-header {
+    padding: 20px 25px !important;
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(239, 68, 68, 0.05)) !important;
+    border-bottom: 1px solid rgba(239, 68, 68, 0.2) !important;
+}
+
+#deleteModal .modal-title {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    color: #fff !important;
+    font-size: 1.1em !important;
+    font-weight: 600 !important;
+}
+
+#deleteModal .modal-title .material-icons-outlined {
+    color: #ef4444 !important;
+    font-size: 24px !important;
+}
+
+/* Body del Modal de Eliminación */
+#deleteModal .modal-body {
+    padding: 25px !important;
+    overflow-y: auto !important;
+    max-height: calc(85vh - 180px) !important;
+}
+
+/* Alert Card Crítico */
+#deleteModal .alert-card {
+    background: rgba(239, 68, 68, 0.05) !important;
+    border: 1px solid rgba(239, 68, 68, 0.2) !important;
+    border-radius: 12px !important;
+    padding: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+#deleteModal .alert-card.critical {
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+#deleteModal .alert-card.critical::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 3px !important;
+    background: linear-gradient(90deg, transparent, #ef4444, transparent) !important;
+    animation: alertPulse 2s infinite !important;
+}
+
+@keyframes alertPulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+}
+
+/* Icono de Alerta */
+#deleteModal .alert-icon {
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 15px !important;
+}
+
+#deleteModal .alert-icon .material-icons-outlined {
+    font-size: 48px !important;
+    color: #ef4444 !important;
+    animation: shake 2s infinite !important;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-2px); }
+    20%, 40%, 60%, 80% { transform: translateX(2px); }
+}
+
+/* Contenido de Alerta */
+#deleteModal .alert-content {
+    text-align: center !important;
+}
+
+#deleteModal .alert-title {
+    font-size: 1.2em !important;
+    font-weight: 600 !important;
+    color: #fff !important;
+    margin-bottom: 15px !important;
+}
+
+#deleteModal .alert-message {
+    color: #a0aec0 !important;
+    font-size: 0.95em !important;
+    line-height: 1.6 !important;
+}
+
+#deleteModal .alert-message strong {
+    color: #fff !important;
+    display: block !important;
+    margin-bottom: 10px !important;
+    font-size: 1.05em !important;
+}
+
+#deleteModal .alert-message ul {
+    text-align: left !important;
+    margin: 15px 0 !important;
+    padding-left: 30px !important;
+}
+
+#deleteModal .alert-message ul li {
+    margin: 8px 0 !important;
+    color: #cbd5e0 !important;
+    list-style-type: disc !important;
+}
+
+#deleteModal .alert-message ul li::marker {
+    color: #ef4444 !important;
+}
+
+/* Mensaje de advertencia final */
+#deleteModal .alert-message > strong:last-child {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    color: #f59e0b !important;
+    background: rgba(245, 158, 11, 0.1) !important;
+    border: 1px solid rgba(245, 158, 11, 0.3) !important;
+    border-radius: 8px !important;
+    padding: 12px !important;
+    margin-top: 15px !important;
+    font-size: 0.9em !important;
+}
+
+/* Campo de Contraseña */
+#deleteModal .password-section {
+    margin-top: 20px !important;
+    padding: 20px !important;
+    background: rgba(99, 102, 241, 0.05) !important;
+    border: 1px solid rgba(99, 102, 241, 0.2) !important;
+    border-radius: 12px !important;
+}
+
+#deleteModal .password-label {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin-bottom: 12px !important;
+    font-weight: 600 !important;
+    color: #fff !important;
+    font-size: 0.95em !important;
+}
+
+#deleteModal .password-label .material-icons-outlined {
+    font-size: 20px !important;
+    color: #6366f1 !important;
+}
+
+#deleteModal #delete-password {
+    width: 100% !important;
+    padding: 14px 16px !important;
+    background: #1a1b35 !important;
+    border: 1px solid rgba(99, 102, 241, 0.3) !important;
+    border-radius: 8px !important;
+    color: #fff !important;
+    font-size: 1rem !important;
+    transition: all 0.3s ease !important;
+}
+
+#deleteModal #delete-password:focus {
+    outline: none !important;
+    border-color: #6366f1 !important;
+    background: #1f2040 !important;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1) !important;
+}
+
+#deleteModal #delete-password::placeholder {
+    color: #4a5568 !important;
+}
+
+/* Mensaje de Error */
+#deleteModal #delete-error-message {
+    display: none;
+    margin-top: 12px !important;
+    padding: 10px 12px !important;
+    background: rgba(239, 68, 68, 0.1) !important;
+    border: 1px solid rgba(239, 68, 68, 0.3) !important;
+    border-radius: 6px !important;
+    color: #fc8181 !important;
+    font-size: 0.875rem !important;
+}
+
+#deleteModal #delete-error-message.show {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    animation: errorShake 0.5s !important;
+}
+
+@keyframes errorShake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-3px); }
+    20%, 40%, 60%, 80% { transform: translateX(3px); }
+}
+
+#deleteModal #delete-error-message .material-icons-outlined {
+    font-size: 18px !important;
+    color: #ef4444 !important;
+}
+
+/* Botones de Acción */
+#deleteModal .modal-actions {
+    display: flex !important;
+    justify-content: flex-end !important;
+    gap: 12px !important;
+    margin-top: 25px !important;
+    padding-top: 20px !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+#deleteModal .btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 12px 20px !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-size: 0.95em !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+}
+
+#deleteModal .btn .material-icons-outlined {
+    font-size: 20px !important;
+}
+
+#deleteModal .btn-secondary {
+    background: rgba(107, 114, 128, 0.2) !important;
+    color: #cbd5e0 !important;
+    border: 1px solid rgba(107, 114, 128, 0.3) !important;
+}
+
+#deleteModal .btn-secondary:hover {
+    background: rgba(107, 114, 128, 0.3) !important;
+    transform: translateY(-1px) !important;
+}
+
+#deleteModal .btn.danger {
+    background: linear-gradient(135deg, #ef4444, #dc2626) !important;
+    color: #fff !important;
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3) !important;
+}
+
+#deleteModal .btn.danger:hover {
+    background: linear-gradient(135deg, #dc2626, #b91c1c) !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4) !important;
+}
+
+#deleteModal .btn.danger:disabled {
+    opacity: 0.6 !important;
+    cursor: not-allowed !important;
+    transform: none !important;
+}
+
+/* Animación de carga en botón */
+#deleteModal .btn.danger .rotating {
+    animation: spin 1s linear infinite !important;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Responsive para Modal de Eliminación */
+@media (max-width: 600px) {
+    #deleteModal .modal-container {
+        width: 100% !important;
+        height: 100% !important;
+        max-height: 100% !important;
+        border-radius: 0 !important;
+    }
+    
+    #deleteModal .modal-body {
+        max-height: calc(100vh - 140px) !important;
+    }
+    
+    #deleteModal .alert-message ul {
+        padding-left: 20px !important;
+    }
+    
+    #deleteModal .modal-actions {
+        flex-direction: column-reverse !important;
+    }
+    
+    #deleteModal .btn {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+}
+
+/* Ajustes para mejor legibilidad */
+#deleteModal {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+/* Focus visible para accesibilidad */
+#deleteModal button:focus-visible,
+#deleteModal input:focus-visible {
+    outline: 2px solid #6366f1 !important;
+    outline-offset: 2px !important;
+}
+
+/* Transición suave al abrir/cerrar */
+#deleteModal.modal-overlay {
+    transition: opacity 0.3s ease !important;
+}
+
+#deleteModal.modal-overlay.show {
+    animation: fadeIn 0.3s ease !important;
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0;
+        backdrop-filter: blur(0);
+    }
+    to { 
+        opacity: 1;
+        backdrop-filter: blur(8px);
+    }
+}
+
+#deleteModal .modal-container {
+    animation: slideUp 0.3s ease !important;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

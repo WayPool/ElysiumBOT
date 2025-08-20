@@ -1,0 +1,5 @@
+[20-Aug-2025 15:35:20 UTC] [CSV Import Error] Demasiados errores. Importación cancelada. | File: /var/www/vhosts/elysiumdubai.net/app.elysiumdubai.net/upload/api/process_csv_import.php | Line: 225
+[20-Aug-2025 15:35:53 UTC] [CSV Import Error] Demasiados errores. Importación cancelada. | File: /var/www/vhosts/elysiumdubai.net/app.elysiumdubai.net/upload/api/process_csv_import.php | Line: 225
+[20-Aug-2025 15:37:11 UTC] [CSV Import Error] Demasiados errores. Importación cancelada. | File: /var/www/vhosts/elysiumdubai.net/app.elysiumdubai.net/upload/api/process_csv_import.php | Line: 225
+[20-Aug-2025 15:39:32 UTC] [CSV Import Error] Demasiados errores. Importación cancelada. | File: /var/www/vhosts/elysiumdubai.net/app.elysiumdubai.net/upload/api/process_csv_import.php | Line: 225
+[20-Aug-2025 16:03:23 UTC] [CSV Import Error] Columnas faltantes en CSV: ticket, time, type, symbol, volume, price, profit | File: /var/www/vhosts/elysiumdubai.net/app.elysiumdubai.net/upload/api/process_csv_import.php | Line: 315
